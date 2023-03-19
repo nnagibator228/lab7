@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Лабораторная работа №7 по предмету программирование МФ МГТУ им. Н.Э. Баумана: Исходный файл src/Polynomial.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Лабораторная работа №7 по предмету программирование МФ МГТУ им. Н.Э. Баумана
+   </div>
+   <div id="projectbrief">Реализация абстрактной структуры многочлена.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">Polynomial.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_polynomial_8hpp.html">См. документацию.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef POLYNOMIAL_HPP</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define POLYNOMIAL_HPP</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno"><a class="line" href="class_polynomial.html">    4</a></span><span class="keyword">class </span><a class="code hl_class" href="class_polynomial.html">Polynomial</a> {</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>  <span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="class_polynomial.html#a010abe6dd294b2e35d0b5750cb10ad5d">    6</a></span>    <span class="keywordtype">double</span> *<a class="code hl_variable" href="class_polynomial.html#a010abe6dd294b2e35d0b5750cb10ad5d">degCoeff</a>;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="class_polynomial.html#ab694894fd324acd94ff38023ed1f9e6b">    7</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_polynomial.html#ab694894fd324acd94ff38023ed1f9e6b">capacity</a>;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>  <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <a class="code hl_function" href="class_polynomial.html#a961dec5c0727f03e5273f74a345dfbb6">Polynomial</a>(); <span class="comment">//done.</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <a class="code hl_function" href="class_polynomial.html#a961dec5c0727f03e5273f74a345dfbb6">Polynomial</a>(<span class="keywordtype">int</span> <a class="code hl_variable" href="class_polynomial.html#ab694894fd324acd94ff38023ed1f9e6b">capacity</a>); <span class="comment">//done.</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <a class="code hl_function" href="class_polynomial.html#a961dec5c0727f03e5273f74a345dfbb6">Polynomial</a>(<a class="code hl_class" href="class_polynomial.html">Polynomial</a> <span class="keyword">const</span> &amp;p); <span class="comment">//done.</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <a class="code hl_function" href="class_polynomial.html#a961dec5c0727f03e5273f74a345dfbb6">Polynomial</a>(<span class="keywordtype">double</span>* arr, <span class="keywordtype">size_t</span> size); <span class="comment">//done.</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <a class="code hl_function" href="class_polynomial.html#a961dec5c0727f03e5273f74a345dfbb6">Polynomial</a>(<span class="keywordtype">float</span>* arr, <span class="keywordtype">size_t</span> size); <span class="comment">//done.</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <a class="code hl_function" href="class_polynomial.html#a961dec5c0727f03e5273f74a345dfbb6">Polynomial</a>(std::initializer_list&lt;double&gt; list); <span class="comment">//done.</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <a class="code hl_function" href="class_polynomial.html#a8661913007629a0f82df15736fa2afb4">~Polynomial</a>(<span class="keywordtype">void</span>); <span class="comment">//done.</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_polynomial.html#a2b7959376c5e22ac912e9698274233b3">   16</a></span>    <span class="keyword">inline</span> <span class="keywordtype">int</span> <a class="code hl_function" href="class_polynomial.html#a2b7959376c5e22ac912e9698274233b3">getCapacity</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_polynomial.html#ab694894fd324acd94ff38023ed1f9e6b">capacity</a>; } <span class="comment">//done.</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="class_polynomial.html#a3cd79f95cc11614cbf99d19ec70650df">   17</a></span>    <span class="keyword">inline</span> <span class="keywordtype">double</span>* <a class="code hl_function" href="class_polynomial.html#a3cd79f95cc11614cbf99d19ec70650df">getDegCoeff</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_polynomial.html#a010abe6dd294b2e35d0b5750cb10ad5d">degCoeff</a>; } <span class="comment">//done.</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keywordtype">long</span> <span class="keywordtype">double</span> <a class="code hl_function" href="class_polynomial.html#a7dfc7ac0bd04fd7b7581540138c57659">countX</a>(<span class="keywordtype">double</span> x) <span class="keyword">const</span>; <span class="comment">//done.</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_polynomial.html#a8326df970ce2084129eeba624ddca2ed">setCoefficient</a>(<span class="keywordtype">int</span> deg, <span class="keywordtype">double</span> coef); <span class="comment">//done.</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keywordtype">double</span>&amp; <a class="code hl_function" href="class_polynomial.html#a0ecf70c4960c36beefe5c35de55eee46">at</a>(<span class="keywordtype">int</span>);</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keywordtype">double</span>&amp; <a class="code hl_function" href="class_polynomial.html#a48746d31f1526b7c25b6c12cd6b3d932">operator[]</a>(<span class="keywordtype">int</span>); <span class="comment">//done.</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keyword">operator</span> std::string();</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_polynomial.html#ac6c718d8a79442067a453170aa4f0915">operator==</a>(<a class="code hl_class" href="class_polynomial.html">Polynomial</a> <span class="keyword">const</span> &amp;P2); <span class="comment">//done.</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_polynomial.html#abeb1f6f92b521935edff25125811e647">operator!=</a>(<a class="code hl_class" href="class_polynomial.html">Polynomial</a> <span class="keyword">const</span> &amp;P2); <span class="comment">//done.</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_polynomial.html#aad1fde52065c05cba2c22dae1858126d">operator&gt;</a>(<a class="code hl_class" href="class_polynomial.html">Polynomial</a> <span class="keyword">const</span> &amp;P2); <span class="comment">//done.</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_polynomial.html#a551e64fe927640d4e129b7c4dfb037c0">operator&gt;=</a>(<a class="code hl_class" href="class_polynomial.html">Polynomial</a> <span class="keyword">const</span> &amp;P2); <span class="comment">//done.</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_polynomial.html#ab9a68f30b7345169e231c95e4ffc9816">operator&lt;</a>(<a class="code hl_class" href="class_polynomial.html">Polynomial</a> <span class="keyword">const</span> &amp;P2); <span class="comment">//done.</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_polynomial.html#ab464a135e1f98f3f13ef26e9fef54896">operator&lt;=</a>(<a class="code hl_class" href="class_polynomial.html">Polynomial</a> <span class="keyword">const</span> &amp;P2); <span class="comment">//done.</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <a class="code hl_class" href="class_polynomial.html">Polynomial</a> <a class="code hl_function" href="class_polynomial.html#acbe22c5b48d93618d2d936e376b10545">operator+</a>(<a class="code hl_class" href="class_polynomial.html">Polynomial</a> <span class="keyword">const</span> &amp;P2); <span class="comment">//done.</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <a class="code hl_class" href="class_polynomial.html">Polynomial</a> <a class="code hl_function" href="class_polynomial.html#a78565900bba73f1b5aaeee09a88c74f7">operator+=</a>(<a class="code hl_class" href="class_polynomial.html">Polynomial</a> <span class="keyword">const</span> &amp;P2); <span class="comment">//done.</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <a class="code hl_class" href="class_polynomial.html">Polynomial</a> <a class="code hl_function" href="class_polynomial.html#a17bae4876b7fc3de29d7b5ccee63376c">operator-</a>(<a class="code hl_class" href="class_polynomial.html">Polynomial</a> <span class="keyword">const</span> &amp;P2); <span class="comment">//done.</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <a class="code hl_class" href="class_polynomial.html">Polynomial</a> <a class="code hl_function" href="class_polynomial.html#a13464020e4826144a8e5c11dd5528c14">operator-=</a>(<a class="code hl_class" href="class_polynomial.html">Polynomial</a> <span class="keyword">const</span> &amp;P2); <span class="comment">//done.</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <a class="code hl_class" href="class_polynomial.html">Polynomial</a> <a class="code hl_function" href="class_polynomial.html#aa436c75b618d36edfbbc6af57095b58a">operator*</a>(<a class="code hl_class" href="class_polynomial.html">Polynomial</a> <span class="keyword">const</span> &amp;P2); <span class="comment">//done.</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <a class="code hl_class" href="class_polynomial.html">Polynomial</a> <a class="code hl_function" href="class_polynomial.html#a006d6b2e816dc35d49ea1f7536ccc3b3">operator*=</a>(<a class="code hl_class" href="class_polynomial.html">Polynomial</a> <span class="keyword">const</span> &amp;P2); <span class="comment">//done.</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <a class="code hl_class" href="class_polynomial.html">Polynomial</a> <a class="code hl_function" href="class_polynomial.html#a8b6f267c51892ec2fb6072ba3bd6bbe8">operator/</a>(<a class="code hl_class" href="class_polynomial.html">Polynomial</a> <span class="keyword">const</span> &amp;P2); <span class="comment">//done.</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <a class="code hl_class" href="class_polynomial.html">Polynomial</a> <a class="code hl_function" href="class_polynomial.html#a76ea20eb2ad4bd22ded6089c11d6af28">operator%</a>(<a class="code hl_class" href="class_polynomial.html">Polynomial</a> <span class="keyword">const</span> &amp;P2); <span class="comment">//done.</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <a class="code hl_class" href="class_polynomial.html">Polynomial</a> <a class="code hl_function" href="class_polynomial.html#a2d332fd7fc2b646947f917470e71cb1c">operator++</a>(<span class="keywordtype">void</span>); <span class="comment">//done.</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <a class="code hl_class" href="class_polynomial.html">Polynomial</a> <a class="code hl_function" href="class_polynomial.html#aafaf9b6f837f02ac53381374cf06a530">operator--</a>(<span class="keywordtype">void</span>); <span class="comment">//done.</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <a class="code hl_class" href="class_polynomial.html">Polynomial</a> <a class="code hl_function" href="class_polynomial.html#a17bae4876b7fc3de29d7b5ccee63376c">operator-</a>(<span class="keywordtype">void</span>); <span class="comment">//done.</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_polynomial.html#a3cc15ccda42794e4e9999c212d325932">operator=</a>(<a class="code hl_class" href="class_polynomial.html">Polynomial</a> <span class="keyword">const</span> &amp;p); <span class="comment">//done.</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="comment">//void operator=(Polynomial const &amp;p);</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_polynomial.html#ac796159642183ada90df566d46ba524d">print</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>};</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclass_polynomial_html"><div class="ttname"><a href="class_polynomial.html">Polynomial</a></div><div class="ttdef"><b>Definition:</b> <a href="_polynomial_8hpp_source.html#l00004">Polynomial.hpp:4</a></div></div>
+<div class="ttc" id="aclass_polynomial_html_a006d6b2e816dc35d49ea1f7536ccc3b3"><div class="ttname"><a href="class_polynomial.html#a006d6b2e816dc35d49ea1f7536ccc3b3">Polynomial::operator*=</a></div><div class="ttdeci">Polynomial operator*=(Polynomial const &amp;P2)</div><div class="ttdef"><b>Definition:</b> <a href="_polynomial_8cpp_source.html#l00205">Polynomial.cpp:205</a></div></div>
+<div class="ttc" id="aclass_polynomial_html_a010abe6dd294b2e35d0b5750cb10ad5d"><div class="ttname"><a href="class_polynomial.html#a010abe6dd294b2e35d0b5750cb10ad5d">Polynomial::degCoeff</a></div><div class="ttdeci">double * degCoeff</div><div class="ttdef"><b>Definition:</b> <a href="_polynomial_8hpp_source.html#l00006">Polynomial.hpp:6</a></div></div>
+<div class="ttc" id="aclass_polynomial_html_a0ecf70c4960c36beefe5c35de55eee46"><div class="ttname"><a href="class_polynomial.html#a0ecf70c4960c36beefe5c35de55eee46">Polynomial::at</a></div><div class="ttdeci">double &amp; at(int)</div><div class="ttdef"><b>Definition:</b> <a href="_polynomial_8cpp_source.html#l00103">Polynomial.cpp:103</a></div></div>
+<div class="ttc" id="aclass_polynomial_html_a13464020e4826144a8e5c11dd5528c14"><div class="ttname"><a href="class_polynomial.html#a13464020e4826144a8e5c11dd5528c14">Polynomial::operator-=</a></div><div class="ttdeci">Polynomial operator-=(Polynomial const &amp;P2)</div><div class="ttdef"><b>Definition:</b> <a href="_polynomial_8cpp_source.html#l00172">Polynomial.cpp:172</a></div></div>
+<div class="ttc" id="aclass_polynomial_html_a17bae4876b7fc3de29d7b5ccee63376c"><div class="ttname"><a href="class_polynomial.html#a17bae4876b7fc3de29d7b5ccee63376c">Polynomial::operator-</a></div><div class="ttdeci">Polynomial operator-(void)</div><div class="ttdef"><b>Definition:</b> <a href="_polynomial_8cpp_source.html#l00336">Polynomial.cpp:336</a></div></div>
+<div class="ttc" id="aclass_polynomial_html_a2b7959376c5e22ac912e9698274233b3"><div class="ttname"><a href="class_polynomial.html#a2b7959376c5e22ac912e9698274233b3">Polynomial::getCapacity</a></div><div class="ttdeci">int getCapacity() const</div><div class="ttdef"><b>Definition:</b> <a href="_polynomial_8hpp_source.html#l00016">Polynomial.hpp:16</a></div></div>
+<div class="ttc" id="aclass_polynomial_html_a2d332fd7fc2b646947f917470e71cb1c"><div class="ttname"><a href="class_polynomial.html#a2d332fd7fc2b646947f917470e71cb1c">Polynomial::operator++</a></div><div class="ttdeci">Polynomial operator++(void)</div><div class="ttdef"><b>Definition:</b> <a href="_polynomial_8cpp_source.html#l00320">Polynomial.cpp:320</a></div></div>
+<div class="ttc" id="aclass_polynomial_html_a3cc15ccda42794e4e9999c212d325932"><div class="ttname"><a href="class_polynomial.html#a3cc15ccda42794e4e9999c212d325932">Polynomial::operator=</a></div><div class="ttdeci">void operator=(Polynomial const &amp;p)</div><div class="ttdef"><b>Definition:</b> <a href="_polynomial_8cpp_source.html#l00346">Polynomial.cpp:346</a></div></div>
+<div class="ttc" id="aclass_polynomial_html_a3cd79f95cc11614cbf99d19ec70650df"><div class="ttname"><a href="class_polynomial.html#a3cd79f95cc11614cbf99d19ec70650df">Polynomial::getDegCoeff</a></div><div class="ttdeci">double * getDegCoeff() const</div><div class="ttdef"><b>Definition:</b> <a href="_polynomial_8hpp_source.html#l00017">Polynomial.hpp:17</a></div></div>
+<div class="ttc" id="aclass_polynomial_html_a48746d31f1526b7c25b6c12cd6b3d932"><div class="ttname"><a href="class_polynomial.html#a48746d31f1526b7c25b6c12cd6b3d932">Polynomial::operator[]</a></div><div class="ttdeci">double &amp; operator[](int)</div><div class="ttdef"><b>Definition:</b> <a href="_polynomial_8cpp_source.html#l00113">Polynomial.cpp:113</a></div></div>
+<div class="ttc" id="aclass_polynomial_html_a551e64fe927640d4e129b7c4dfb037c0"><div class="ttname"><a href="class_polynomial.html#a551e64fe927640d4e129b7c4dfb037c0">Polynomial::operator&gt;=</a></div><div class="ttdeci">bool operator&gt;=(Polynomial const &amp;P2)</div><div class="ttdef"><b>Definition:</b> <a href="_polynomial_8cpp_source.html#l00399">Polynomial.cpp:399</a></div></div>
+<div class="ttc" id="aclass_polynomial_html_a76ea20eb2ad4bd22ded6089c11d6af28"><div class="ttname"><a href="class_polynomial.html#a76ea20eb2ad4bd22ded6089c11d6af28">Polynomial::operator%</a></div><div class="ttdeci">Polynomial operator%(Polynomial const &amp;P2)</div><div class="ttdef"><b>Definition:</b> <a href="_polynomial_8cpp_source.html#l00273">Polynomial.cpp:273</a></div></div>
+<div class="ttc" id="aclass_polynomial_html_a78565900bba73f1b5aaeee09a88c74f7"><div class="ttname"><a href="class_polynomial.html#a78565900bba73f1b5aaeee09a88c74f7">Polynomial::operator+=</a></div><div class="ttdeci">Polynomial operator+=(Polynomial const &amp;P2)</div><div class="ttdef"><b>Definition:</b> <a href="_polynomial_8cpp_source.html#l00136">Polynomial.cpp:136</a></div></div>
+<div class="ttc" id="aclass_polynomial_html_a7dfc7ac0bd04fd7b7581540138c57659"><div class="ttname"><a href="class_polynomial.html#a7dfc7ac0bd04fd7b7581540138c57659">Polynomial::countX</a></div><div class="ttdeci">long double countX(double x) const</div><div class="ttdef"><b>Definition:</b> <a href="_polynomial_8cpp_source.html#l00096">Polynomial.cpp:96</a></div></div>
+<div class="ttc" id="aclass_polynomial_html_a8326df970ce2084129eeba624ddca2ed"><div class="ttname"><a href="class_polynomial.html#a8326df970ce2084129eeba624ddca2ed">Polynomial::setCoefficient</a></div><div class="ttdeci">void setCoefficient(int deg, double coef)</div><div class="ttdef"><b>Definition:</b> <a href="_polynomial_8cpp_source.html#l00077">Polynomial.cpp:77</a></div></div>
+<div class="ttc" id="aclass_polynomial_html_a8661913007629a0f82df15736fa2afb4"><div class="ttname"><a href="class_polynomial.html#a8661913007629a0f82df15736fa2afb4">Polynomial::~Polynomial</a></div><div class="ttdeci">~Polynomial(void)</div><div class="ttdef"><b>Definition:</b> <a href="_polynomial_8cpp_source.html#l00063">Polynomial.cpp:63</a></div></div>
+<div class="ttc" id="aclass_polynomial_html_a8b6f267c51892ec2fb6072ba3bd6bbe8"><div class="ttname"><a href="class_polynomial.html#a8b6f267c51892ec2fb6072ba3bd6bbe8">Polynomial::operator/</a></div><div class="ttdeci">Polynomial operator/(Polynomial const &amp;P2)</div><div class="ttdef"><b>Definition:</b> <a href="_polynomial_8cpp_source.html#l00221">Polynomial.cpp:221</a></div></div>
+<div class="ttc" id="aclass_polynomial_html_a961dec5c0727f03e5273f74a345dfbb6"><div class="ttname"><a href="class_polynomial.html#a961dec5c0727f03e5273f74a345dfbb6">Polynomial::Polynomial</a></div><div class="ttdeci">Polynomial()</div><div class="ttdef"><b>Definition:</b> <a href="_polynomial_8cpp_source.html#l00009">Polynomial.cpp:9</a></div></div>
+<div class="ttc" id="aclass_polynomial_html_aa436c75b618d36edfbbc6af57095b58a"><div class="ttname"><a href="class_polynomial.html#aa436c75b618d36edfbbc6af57095b58a">Polynomial::operator*</a></div><div class="ttdeci">Polynomial operator*(Polynomial const &amp;P2)</div><div class="ttdef"><b>Definition:</b> <a href="_polynomial_8cpp_source.html#l00194">Polynomial.cpp:194</a></div></div>
+<div class="ttc" id="aclass_polynomial_html_aad1fde52065c05cba2c22dae1858126d"><div class="ttname"><a href="class_polynomial.html#aad1fde52065c05cba2c22dae1858126d">Polynomial::operator&gt;</a></div><div class="ttdeci">bool operator&gt;(Polynomial const &amp;P2)</div><div class="ttdef"><b>Definition:</b> <a href="_polynomial_8cpp_source.html#l00383">Polynomial.cpp:383</a></div></div>
+<div class="ttc" id="aclass_polynomial_html_aafaf9b6f837f02ac53381374cf06a530"><div class="ttname"><a href="class_polynomial.html#aafaf9b6f837f02ac53381374cf06a530">Polynomial::operator--</a></div><div class="ttdeci">Polynomial operator--(void)</div><div class="ttdef"><b>Definition:</b> <a href="_polynomial_8cpp_source.html#l00328">Polynomial.cpp:328</a></div></div>
+<div class="ttc" id="aclass_polynomial_html_ab464a135e1f98f3f13ef26e9fef54896"><div class="ttname"><a href="class_polynomial.html#ab464a135e1f98f3f13ef26e9fef54896">Polynomial::operator&lt;=</a></div><div class="ttdeci">bool operator&lt;=(Polynomial const &amp;P2)</div><div class="ttdef"><b>Definition:</b> <a href="_polynomial_8cpp_source.html#l00431">Polynomial.cpp:431</a></div></div>
+<div class="ttc" id="aclass_polynomial_html_ab694894fd324acd94ff38023ed1f9e6b"><div class="ttname"><a href="class_polynomial.html#ab694894fd324acd94ff38023ed1f9e6b">Polynomial::capacity</a></div><div class="ttdeci">int capacity</div><div class="ttdef"><b>Definition:</b> <a href="_polynomial_8hpp_source.html#l00007">Polynomial.hpp:7</a></div></div>
+<div class="ttc" id="aclass_polynomial_html_ab9a68f30b7345169e231c95e4ffc9816"><div class="ttname"><a href="class_polynomial.html#ab9a68f30b7345169e231c95e4ffc9816">Polynomial::operator&lt;</a></div><div class="ttdeci">bool operator&lt;(Polynomial const &amp;P2)</div><div class="ttdef"><b>Definition:</b> <a href="_polynomial_8cpp_source.html#l00415">Polynomial.cpp:415</a></div></div>
+<div class="ttc" id="aclass_polynomial_html_abeb1f6f92b521935edff25125811e647"><div class="ttname"><a href="class_polynomial.html#abeb1f6f92b521935edff25125811e647">Polynomial::operator!=</a></div><div class="ttdeci">bool operator!=(Polynomial const &amp;P2)</div><div class="ttdef"><b>Definition:</b> <a href="_polynomial_8cpp_source.html#l00369">Polynomial.cpp:369</a></div></div>
+<div class="ttc" id="aclass_polynomial_html_ac6c718d8a79442067a453170aa4f0915"><div class="ttname"><a href="class_polynomial.html#ac6c718d8a79442067a453170aa4f0915">Polynomial::operator==</a></div><div class="ttdeci">bool operator==(Polynomial const &amp;P2)</div><div class="ttdef"><b>Definition:</b> <a href="_polynomial_8cpp_source.html#l00355">Polynomial.cpp:355</a></div></div>
+<div class="ttc" id="aclass_polynomial_html_ac796159642183ada90df566d46ba524d"><div class="ttname"><a href="class_polynomial.html#ac796159642183ada90df566d46ba524d">Polynomial::print</a></div><div class="ttdeci">void print() const</div><div class="ttdef"><b>Definition:</b> <a href="_polynomial_8cpp_source.html#l00069">Polynomial.cpp:69</a></div></div>
+<div class="ttc" id="aclass_polynomial_html_acbe22c5b48d93618d2d936e376b10545"><div class="ttname"><a href="class_polynomial.html#acbe22c5b48d93618d2d936e376b10545">Polynomial::operator+</a></div><div class="ttdeci">Polynomial operator+(Polynomial const &amp;P2)</div><div class="ttdef"><b>Definition:</b> <a href="_polynomial_8cpp_source.html#l00122">Polynomial.cpp:122</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Документация по Лабораторная работа №7 по предмету программирование МФ МГТУ им. Н.Э. Баумана. Последние изменения: Вс 19 Мар 2023 21:32:21. Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+</small></address>
+</body>
+</html>
