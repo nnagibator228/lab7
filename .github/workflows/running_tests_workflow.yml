@@ -1,0 +1,26 @@
+name: Run Check tests for Cpp code
+
+on: [push]
+
+jobs:
+  build:
+    name: Running tests & Generate docs
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Install dependencies
+        run: sudo apt-get install -y clang-12 ccls gdb make tree check curl
+      - name: Run testing script
+        run: chmod +x run_tests.sh && ./run_tests.sh | tail -2 > results
+      - name: Export env
+        run: echo "tests_passed=$(grep 'SUCCESS!' -o results | wc -l)" >> $GITHUB_ENV
+      - name: print TEST env
+        run: echo "${{env.tests_passed}}"
+      - name: Send test result
+        if: env.tests_passed == '1'
+        uses: langroodi/doxygenize@v1
+        with:
+          ghpagesbranch: master
+          ghpagesdir: ./docs/
+
