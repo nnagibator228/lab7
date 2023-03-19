@@ -265,7 +265,15 @@ TEST_CASE("testing binary & unary operations overload. ") {
     CHECK((p3.getDegCoeff()[0] == 4 && p3.getDegCoeff()[1] == -3 && p3.getDegCoeff()[2] == 1) == true);
   }
 
-  SUBCASE("testing % operator overload. ") {
+  SUBCASE("testing / operator overload. ") {
+    Polynomial p1 = Polynomial({-42, 0, -12, 1});
+    Polynomial p2 = Polynomial({-3, 1});
+    Polynomial p3 = p1 / p2;
+    p3.print();
+    CHECK((p3.getDegCoeff()[0] == -27 && p3.getDegCoeff()[1] == -9 && p3.getDegCoeff()[2] == 1) == true);
+  }
+
+    SUBCASE("testing % operator overload. ") {
     Polynomial p1 = Polynomial({1, 4, 2, -3, 1});
     Polynomial p2 = Polynomial({-2, 0, 1});
     Polynomial p3 = p1 % p2;

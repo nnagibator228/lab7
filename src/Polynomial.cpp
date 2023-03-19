@@ -221,32 +221,10 @@ Polynomial Polynomial::operator*=(Polynomial const &P2){
 Polynomial Polynomial::operator/(Polynomial const &P2){
   
   bool inAlgoritm = true;
-  Polynomial temp; 
-  Polynomial ob_1; 
-  Polynomial ob_2; 
-  Polynomial ob_4;
-  
-  temp.capacity = this->capacity - P2.capacity;
-  double *newdeg=(double *) malloc(sizeof(double) * (temp.capacity+1));
-  for(int i=0; i<=temp.capacity; ++i){
-    newdeg[i]=0;
-  }
-  temp.degCoeff = newdeg;
-  
-  ob_1.capacity = this->capacity;
-  ob_1.degCoeff = (double *) malloc(sizeof(double) * (this->capacity+1));
-  for(int i = 0; i<= ob_1.capacity; ++i){
-    ob_1.degCoeff[i] = this->degCoeff[i];
-  }
-  
-  ob_2.capacity = P2.capacity;
-  ob_2.degCoeff = (double *) malloc(sizeof(double) * (P2.capacity+1));
-  for(int i = 0; i<= ob_2.capacity; ++i){
-    ob_2.degCoeff[i] = P2.degCoeff[i];
-  }
-  
-  ob_4.capacity = ob_1.capacity;
-  ob_4.degCoeff = (double *) malloc(sizeof(double) * (P2.capacity+1));
+  Polynomial temp = Polynomial(this->capacity - P2.capacity); 
+  Polynomial ob_1 = Polynomial(*this); 
+  Polynomial ob_2 = Polynomial(P2); 
+  Polynomial ob_4 = Polynomial(ob_1.capacity);
 
   double mnojnik;
   int k = 0;
@@ -295,24 +273,9 @@ Polynomial Polynomial::operator/(Polynomial const &P2){
 Polynomial Polynomial::operator%(Polynomial const &P2){
   bool inAlgoritm = true;
 
-  Polynomial ob_1;
-  Polynomial ob_2;
-  Polynomial ob_4;
-
-  ob_1.capacity = this->capacity;
-  ob_1.degCoeff = (double *) malloc(sizeof(double) * (this->capacity+1));
-  for(int i = 0; i<= ob_1.capacity; ++i){
-    ob_1.degCoeff[i] = this->degCoeff[i];
-  }
-  
-  ob_2.capacity = P2.capacity;
-  ob_2.degCoeff = (double *) malloc(sizeof(double) * (P2.capacity+1));
-  for(int i = 0; i<= ob_2.capacity; ++i){
-    ob_2.degCoeff[i] = P2.degCoeff[i];
-  }
-  
-  ob_4.capacity = ob_1.capacity;
-  ob_4.degCoeff = (double *) malloc(sizeof(double) * (P2.capacity+1));
+  Polynomial ob_1 = Polynomial(*this); 
+  Polynomial ob_2 = Polynomial(P2); 
+  Polynomial ob_4 = Polynomial(ob_1.capacity);
 
   double mnojnik;
   int i, j;
