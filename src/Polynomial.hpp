@@ -1,7 +1,7 @@
 #ifndef POLYNOMIAL_HPP
 #define POLYNOMIAL_HPP
 
-class Polynomial {  
+class Polynomial {
   protected:
     double *degCoeff;
     int capacity;
