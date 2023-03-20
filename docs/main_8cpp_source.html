@@ -1,9 +1,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
-<meta name="generator" content="Doxygen 1.9.2"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Лабораторная работа №7 по предмету программирование МФ МГТУ им. Н.Э. Баумана: Исходный файл src/main.cpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
@@ -19,8 +19,8 @@
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr style="height: 56px;">
-  <td id="projectalign" style="padding-left: 0.5em;">
+ <tr id="projectrow">
+  <td id="projectalign">
    <div id="projectname">Лабораторная работа №7 по предмету программирование МФ МГТУ им. Н.Э. Баумана
    </div>
    <div id="projectbrief">Реализация абстрактной структуры многочлена.</div>
@@ -30,10 +30,10 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Создано системой Doxygen 1.9.2 -->
+<!-- Создано системой Doxygen 1.9.6 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-var searchBox = new SearchBox("searchBox", "search",'Поиск','.html');
+var searchBox = new SearchBox("searchBox", "search/",'.html');
 /* @license-end */
 </script>
 <script type="text/javascript" src="menudata.js"></script>
@@ -56,9 +56,16 @@ $(function() {
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
 </div>
 
 <div id="nav-path" class="navpath">
@@ -357,15 +364,15 @@ $(function() {
 <div class="ttc" id="a_polynomial_8hpp_html"><div class="ttname"><a href="_polynomial_8hpp.html">Polynomial.hpp</a></div></div>
 <div class="ttc" id="aclass_polynomial_html"><div class="ttname"><a href="class_polynomial.html">Polynomial</a></div><div class="ttdef"><b>Definition:</b> <a href="_polynomial_8hpp_source.html#l00004">Polynomial.hpp:4</a></div></div>
 <div class="ttc" id="aclass_polynomial_html_a0ecf70c4960c36beefe5c35de55eee46"><div class="ttname"><a href="class_polynomial.html#a0ecf70c4960c36beefe5c35de55eee46">Polynomial::at</a></div><div class="ttdeci">double &amp; at(int)</div><div class="ttdef"><b>Definition:</b> <a href="_polynomial_8cpp_source.html#l00103">Polynomial.cpp:103</a></div></div>
-<div class="ttc" id="aclass_polynomial_html_a2b7959376c5e22ac912e9698274233b3"><div class="ttname"><a href="class_polynomial.html#a2b7959376c5e22ac912e9698274233b3">Polynomial::getCapacity</a></div><div class="ttdeci">int getCapacity() const</div><div class="ttdef"><b>Definition:</b> <a href="_polynomial_8hpp_source.html#l00016">Polynomial.hpp:16</a></div></div>
-<div class="ttc" id="aclass_polynomial_html_a3cd79f95cc11614cbf99d19ec70650df"><div class="ttname"><a href="class_polynomial.html#a3cd79f95cc11614cbf99d19ec70650df">Polynomial::getDegCoeff</a></div><div class="ttdeci">double * getDegCoeff() const</div><div class="ttdef"><b>Definition:</b> <a href="_polynomial_8hpp_source.html#l00017">Polynomial.hpp:17</a></div></div>
+<div class="ttc" id="aclass_polynomial_html_a2b7959376c5e22ac912e9698274233b3"><div class="ttname"><a href="class_polynomial.html#a2b7959376c5e22ac912e9698274233b3">Polynomial::getCapacity</a></div><div class="ttdeci">int getCapacity() const</div><div class="ttdef"><b>Definition:</b> <a href="_polynomial_8hpp_source.html#l00021">Polynomial.hpp:21</a></div></div>
+<div class="ttc" id="aclass_polynomial_html_a3cd79f95cc11614cbf99d19ec70650df"><div class="ttname"><a href="class_polynomial.html#a3cd79f95cc11614cbf99d19ec70650df">Polynomial::getDegCoeff</a></div><div class="ttdeci">double * getDegCoeff() const</div><div class="ttdef"><b>Definition:</b> <a href="_polynomial_8hpp_source.html#l00027">Polynomial.hpp:27</a></div></div>
 <div class="ttc" id="aclass_polynomial_html_a7dfc7ac0bd04fd7b7581540138c57659"><div class="ttname"><a href="class_polynomial.html#a7dfc7ac0bd04fd7b7581540138c57659">Polynomial::countX</a></div><div class="ttdeci">long double countX(double x) const</div><div class="ttdef"><b>Definition:</b> <a href="_polynomial_8cpp_source.html#l00096">Polynomial.cpp:96</a></div></div>
 <div class="ttc" id="aclass_polynomial_html_a8326df970ce2084129eeba624ddca2ed"><div class="ttname"><a href="class_polynomial.html#a8326df970ce2084129eeba624ddca2ed">Polynomial::setCoefficient</a></div><div class="ttdeci">void setCoefficient(int deg, double coef)</div><div class="ttdef"><b>Definition:</b> <a href="_polynomial_8cpp_source.html#l00077">Polynomial.cpp:77</a></div></div>
 <div class="ttc" id="aclass_polynomial_html_ac796159642183ada90df566d46ba524d"><div class="ttname"><a href="class_polynomial.html#ac796159642183ada90df566d46ba524d">Polynomial::print</a></div><div class="ttdeci">void print() const</div><div class="ttdef"><b>Definition:</b> <a href="_polynomial_8cpp_source.html#l00069">Polynomial.cpp:69</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по Лабораторная работа №7 по предмету программирование МФ МГТУ им. Н.Э. Баумана. Последние изменения: Вс 19 Мар 2023 21:32:21. Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Документация по Лабораторная работа №7 по предмету программирование МФ МГТУ им. Н.Э. Баумана. Последние изменения: Пн 20 Мар 2023 08:51:47. Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>
